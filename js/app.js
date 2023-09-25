@@ -87,14 +87,6 @@ window.onload = function () {
     startTimer(duration, display);
 };
 
-function confirmExit(event) {
-    event.preventDefault(); // Cancel the event to prevent leaving the page
-
-    // Display a confirmation dialog
-    const confirmationMessage = 'Are you sure you want to leave this page?';
-    event.returnValue = confirmationMessage; // For older browsers
-    return confirmationMessage;
-}
-
-// Attach the event handler to the beforeunload event
-window.addEventListener('beforeunload', confirmExit);
+window.addEventListener('popstate', function (event) {
+    location.reload();
+});
