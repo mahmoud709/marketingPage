@@ -37,7 +37,7 @@ function handleAnswers() {
                 }
             } else {
                 // Handle quiz completion or other actions when all questions are answered
-                window.location.href ='../chequePage.html'
+                window.location.href ='marketingPage/chequePage.html'
                 for (let j = 0; j < answers.length; j++) {
                     answers[j].style.display = 'none'; // Hide answer buttons
                 }
