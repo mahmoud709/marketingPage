@@ -37,7 +37,7 @@ function handleAnswers() {
                 }
             } else {
                 // Handle quiz completion or other actions when all questions are answered
-                window.location.href ='/chequePage.html'
+                window.location.href ='../chequePage.html'
                 for (let j = 0; j < answers.length; j++) {
                     answers[j].style.display = 'none'; // Hide answer buttons
                 }
@@ -69,12 +69,9 @@ function startTimer(duration, display) {
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
-
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-
         display.textContent = minutes + ":" + seconds;
-
         if (--timer < 0) {
             timer = duration;
         }
