@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+    <!--Main Css File -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start Home Page -->
+        <div class="homePage ">
+            <nav class="my-3">
+                <div class="logo">
+                    <img src="images/google.png" alt="google.com" />
+                </div>
+            </nav>
+            <main class="vh-75 mx-auto d-flex justify-content-center align-items-center flex-column">
+                <div class="title">
+                    <h2 class="h4 fw-bold text-center" id="mainTitle">
+                        <span class="text-primary">You </span> <span class="text-danger">are</span> <span
+                            style="color:#FBBC05">Today’s</span> <span class="text-primary">Lucky</span>
+                        <span class="greenColor">Winner</span><span class="text-danger"> !</span>
+                    </h2>
+                </div>
+                <div class="chequeImg text-center my-3">
+                    <img src="images/cheque.png" alt="chequeImg" width="300" height="300" />
+                </div>
+                <div class="paragaph text-center">
+                    <b class="fs-5">
+                        Today we have the winner from:
+                        <span class="country greenColor" id="country">Zimbabwe</span>
+                        <img src="images/country.png" alt="country-image" width="40" height="40">
+                    </b>
+                </div>
+            </main>
+        </div>
+        <!-- End Home Page -->
+        <!-- start small card -->
+        <div class="smallCard mx-1 appear">
+            <div class="card text-center border-0 bg-white shadow p-3" id="mycard" style="border-radius: 10px;">
+                <div class="image">
+                    <img src="images/google.png" alt="google-image" width="100" height="50">
+                </div>
+                <div class="text fs-5 text-muted fw-bold text-info">
+                    <p>Google congratulates you, you have won a valuable gift from our our Financial aid
+                        department.(<span class="greenColor fw-bold">$300.000</span>)</p>
+                </div>
+                <button class="btn btn-primary fw-bold fs-4 w-25 mx-auto" id="confirmBtn">ok</button>
+            </div>
+        </div>
+        <!-- End small card -->
+        <!-- Start text Section -->
+        <div class="textSection">
+            <b class="lh-lg">Congratulations, looks like
+                <span><span style="color: #0000ff;">G</span><span style="color: #ff0000;">o</span><span
+                        style="color: #ffff00;">o</span><span style="color: #0000ff;">g</span><span
+                        style="color: #008000;">l</span><span style="color: #ff0000;">e</span> picked your <span class="fw-bold text-danger deviceModel"></span> randomly,and
+                    you
+                    are so lucky because you are about to get a valuable reward from our
+                    Financial aid department. you've got a cheque with
+                    <span class="greenColor price">($300.000)</span><br />
+            </b>
+            <b class="lh-lg"><span><span style="color: #0000ff;">G</span><span style="color: #ff0000;">o</span><span
+                        style="color: #ffff00;">o</span><span style="color: #0000ff;">g</span><span
+                        style="color: #008000;">l</span><span style="color: #ff0000;">e</span> always care about you,
+                    stay
+                    safe, we have helped hundreds of people just like you to avoid the
+                    Corona virus!
+            </b>
+            <h3 class="h5 fw-bold mt-3 p-0 text-primary">We have collected your data:</h3>
+            <ul class="px-0 py-2">
+                <li class="list-group-numbered my-2">Your Device Model : <span class="fw-bold text-danger deviceModel"></span></li>
+                <li class="list-group-numbered my-2">Your Browser : <span id="browsername" class="fw-bold text-danger"></span></li>
+                <!-- <li class="list-group-numbered my-2">Your IP</li> -->
+            </ul>
+            <b>
+                Now to verfiy you are a human, you have just one step, answer the
+                following questions, after that call us immediately to get your cheque
+                of <span class="greenColor price">($300.000)</span>
+                before it's too late, Thanks for your cooperation
+            </b>
+            <hr />
+            <div class="contentTimer text-center">
+                <b class="timer">Your available time is
+                    <span id="timer" class="text-danger"> 03:59</span> before we give
+                    your cheque to another Random visitor</b>
+            </div>
+            <hr />
+        </div>
+        <!-- End text Section -->
+    </div>
+    <!-- Start overlay section -->
+    <div class="overlay" id="overlay"></div>
+    <!-- End overlay section -->
+    <!-- start dollar rains -->
+
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <!--Start Question Section -->
+    <hr />
+    <section class="text-center">
+        <div class="questionsBox">
+            <b>Question <span id="num1">1</span> from <span id="num2">3</span> :
+                <span class="questionTitle"> </span>
+            </b>
+            <div class="answers my-3">
+                <div class="answers d-flex justify-content-center align-items-center flex-column">
+                    <button class="btn btn-primary fw-bold my-1"></button>
+                    <button class="btn btn-primary fw-bold my-1"></button>
+                    <button class="btn btn-primary fw-bold my-1"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <!-- End Question Section -->
+    <!-- Start audio Section -->
+    <div class="audio">
+        <audio src="css/audio.mp3" autoplay></audio>
+    </div>
+    <!-- End audio Section -->
+    <!--Start People Reviews -->
+    <section class="reviews">
+        <div class="reviewContent">
+            <div class="userPhoto d-flex justify-content-between align-items-center">
+                <img src="images/5.jpg" alt="user-Phote" class="object-fit-cover" width="50" height="50" />
+                <p class="fw-bold ms-2">Patrick Wilson</p>
+            </div>
+            <div class="d-flex align-items-start flex-column p-3">
+                <p class="userReview">
+                    In fact i didn't expect such a great prize from Google, actually i
+                    got $300.000 ! and this a very valuable prize, thanks Google, I
+                    needed this money a lot
+                </p>
+                <div class="usercheque text-end">
+                    <img src="images/2.jpg" alt="usercheque" />
+                </div>
+                <small><span>Reply</span> · <span class="like">Like</span> ·
+                    <u>1 hour ago</u></small>
+            </div>
+        </div>
+        <hr />
+        <div class="reviewContent">
+            <div class="userPhoto d-flex justify-content-between align-items-center">
+                <img src="images/14.jpg" alt="user-Phote" class="object-fit-cover" width="50" height="50" />
+                <p class="fw-bold ms-2">Asendua General</p>
+            </div>
+            <div class="d-flex align-items-start flex-column p-3">
+                <p class="userReview">
+                    My wife and I are so happy, I got a cheque of $300,000 and this was
+                    so real
+                </p>
+                <small><span>Reply</span> · <span class="like">Like</span> ·
+                    <u>12 minutes ago</u></small>
+            </div>
+        </div>
+        <hr />
+        <div class="reviewContent">
+            <div class="userPhoto d-flex justify-content-between align-items-center">
+                <img src="images/like_user_2.jpg" alt="user-Phote" class="object-fit-cover" width="50" height="50" />
+                <p class="fw-bold ms-2">Angelina Wayne</p>
+            </div>
+            <div class="d-flex align-items-start flex-column p-3">
+                <p class="userReview">
+                    Yesterday I got my cheque of $300.000, this was much more than I
+                    expected and it feels great! #Stay at home and be careful and thanks
+                    Google
+                </p>
+                <small><span>Reply</span> · <span class="like">Like</span> ·
+                    <u>8 minutes ago</u></small>
+            </div>
+        </div>
+        <hr />
+        <div class="reviewContent">
+            <div class="userPhoto d-flex justify-content-between align-items-center">
+                <img src="images/7.jpg" alt="user-Phote" class="object-fit-cover" width="50" height="50" />
+                <p class="fw-bold ms-2">Eben Emanuel</p>
+            </div>
+            <div class="d-flex align-items-start flex-column p-3">
+                <p class="userReview">
+                    Amazingly they sent me the Amount of $300.000, I can't believe
+                    myself thanks Google I got the cheque, and here is the Cheque
+                </p>
+                <div class="usercheque text-end">
+                    <img src="images/4.jpg" alt="usercheque" />
+                </div>
+                <small><span>Reply</span> · <span class="like">Like</span> ·
+                    <u>2 hours ago</u></small>
+            </div>
+        </div>
+        <hr />
+        <div class="reviewContent">
+            <div class="userPhoto d-flex justify-content-between align-items-center">
+                <img src="images/6.jpg" alt="user-Phote" class="object-fit-cover" width="50" height="50" />
+                <p class="fw-bold ms-2">Queenzy Lizzy</p>
+            </div>
+            <div class="d-flex align-items-start flex-column p-3">
+                <p class="userReview">
+                    i called them already and the customer service answered me and they
+                    told me that i will get the cheque but i didn't recieved it yet !?
+                    do i have to call them again?
+                </p>
+                <small><span>Reply</span> · <span class="like">Like</span> ·
+                    <u>4 minutes ago</u></small>
+            </div>
+        </div>
+        <hr />
+        <div class="reviewContent">
+            <div class="userPhoto d-flex justify-content-between align-items-center">
+                <img src="images/12.jpg" alt="user-Phote" class="object-fit-cover" width="50" height="50" />
+                <p class="fw-bold ms-2">Sterix Osei Rhymes</p>
+            </div>
+            <div class="d-flex align-items-start flex-column p-3">
+                <p class="userReview">
+                    How do I know that i am eligible to win this wonderful prize?
+                </p>
+                <small><span>Reply</span> · <span class="like">Like</span> ·
+                    <u>3 hours ago</u></small>
+            </div>
+        </div>
+        <hr>
+        <div class="reviewContent">
+            <div class="userPhoto d-flex justify-content-between align-items-center">
+                <img src="images/11.jpg" alt="user-Phote" class="object-fit-cover" width="50" height="50" />
+                <p class="fw-bold ms-2">Awurama Naa</p>
+            </div>
+            <div class="d-flex align-items-start flex-column p-3">
+                <p class="userReview">
+                    My husband wasn't believe that I won this Prize already .. My advice is not to ignore this, i have
+                    won the Cheque with $300.000
+                </p>
+                <div class="usercheque text-end">
+                    <img src="images/3.jpg" alt="usercheque" />
+                </div>
+                <small><span>Reply</span> · <span class="like">Like</span> ·
+                    <u>5 hours ago</u></small>
+            </div>
+        </div>
+    </section>
+    <!--End People Reviews -->
+    <!-- start Footer -->
+    <footer class="footer text-center">
+        <h3 class="h6">Powerd By Google All Copyright © Google Reseved</h3>
+        <div class="logo">
+            <img src="images/google.png" alt="google.com" />
+        </div>
+    </footer>
+    <!-- End footer -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
