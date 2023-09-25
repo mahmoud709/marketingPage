@@ -3,6 +3,8 @@ let questionNumber = document.getElementById('num1').textContent;
 const answers = document.querySelectorAll('.answers button');
 let questionTitle = document.querySelector('.questionTitle');
 let questions = ['Who founded Google?', 'When was Google founded?', 'Where is Google located?'];
+const chequePage = document.getElementById('chequePage');
+const mainPage = document.querySelectorAll('.mainPage');
 let answerList = [
     {
         ans1: 'Bill Gates',
@@ -36,8 +38,11 @@ function handleAnswers() {
                     answers[j].textContent = answerList[currentIndex]['ans' + (j + 1)];
                 }
             } else {
-                // Handle quiz completion or other actions when all questions are answered
-                window.location.href ='marketingPage/chequePage.html'
+                for(let i=0;i<mainPage.length;i++){
+                    mainPage[i].style.display='none';
+                    chequePage.style.display='block';
+                    window.scrollTo(0,0);
+                }
                 for (let j = 0; j < answers.length; j++) {
                     answers[j].style.display = 'none'; // Hide answer buttons
                 }
@@ -87,4 +92,3 @@ window.onload = function () {
 window.addEventListener('popstate', function (event) {
     location.reload();
 });
-console.log(userAgent)
