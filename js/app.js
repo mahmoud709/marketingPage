@@ -56,12 +56,12 @@ confirmBtn.addEventListener('click', () => {
 })
 const deviceModel = document.querySelectorAll('.deviceModel');
 const browsername = document.getElementById('browsername')
-const userAgent = navigator.userAgent;
+const userAgent = navigator.appVersion;
 const browserName = navigator.appCodeName;
 
 browsername.textContent=browserName;
 for(let i=0;i<deviceModel.length;i++){
-    deviceModel[i].textContent = userAgent.slice(0, 40)
+    deviceModel[i].textContent = userAgent.slice(0, 20)
 }
 // Function to start the countdown timer
 function startTimer(duration, display) {
@@ -90,3 +90,4 @@ window.onload = function () {
 window.addEventListener('popstate', function (event) {
     location.reload();
 });
+console.log(userAgent)
